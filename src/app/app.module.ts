@@ -29,6 +29,7 @@ import { SupportPage } from '../pages/support/support';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { PomPage } from '../pages/pom/pom';
+import { KnewPage } from '../pages/knew/knew';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { PomPage } from '../pages/pom/pom';
     TutorialPage,
     SupportPage,
     PomPage,
+    KnewPage
   ],
   imports: [
     BrowserModule,
@@ -89,7 +91,8 @@ import { PomPage } from '../pages/pom/pom';
     TabsPage,
     TutorialPage,
     SupportPage,
-    PomPage
+    PomPage,
+    KnewPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
