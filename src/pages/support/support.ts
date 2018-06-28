@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
+import {KnewPage} from '../knew/knew';
 import { AlertController, NavController, ToastController } from 'ionic-angular';
 import { PomPage } from '../pom/pom';
 
@@ -10,7 +10,7 @@ import { PomPage } from '../pom/pom';
   templateUrl: 'support.html'
 })
 export class SupportPage {
-
+  kneww : any;
   submitted: boolean = false;
   supportMessage: string;
   goToPom: any 
@@ -20,6 +20,9 @@ export class SupportPage {
     public toastCtrl: ToastController
   ) {
       this.goToPom = PomPage;
+
+    this.kneww =KnewPage;
+
   }
 
   ionViewDidEnter() {
@@ -63,5 +66,6 @@ export class SupportPage {
 
       alert.present();
     });
+    
   }
 }
