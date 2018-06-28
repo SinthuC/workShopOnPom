@@ -30,6 +30,7 @@ import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { PomPage } from '../pages/pom/pom';
 import { KnewPage } from '../pages/knew/knew';
+import { JormPageModule } from '../pages/jorm/jorm.module';
 
 import { PeePage } from '../pages/pee/pee';
 
@@ -58,6 +59,7 @@ import { PeePage } from '../pages/pee/pee';
   imports: [
     BrowserModule,
     HttpModule,
+    JormPageModule,
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
