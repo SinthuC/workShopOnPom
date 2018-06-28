@@ -5,6 +5,7 @@ import { PeePage } from '../pee/pee';
 import { AlertController, NavController, ToastController } from 'ionic-angular';
 import { PomPage } from '../pom/pom';
 import { JormPage } from '../jorm/jorm';
+import { Bong1Page } from '../bong1/bong1';
 
 
 
@@ -16,7 +17,9 @@ export class SupportPage {
   kneww : any;
   submitted: boolean = false;
   supportMessage: string;
+  bong1 = Bong1Page;
   go2Jorm = JormPage;
+  
   goToPom: any 
   constructor(
     public navCtrl: NavController,
@@ -24,6 +27,8 @@ export class SupportPage {
     public toastCtrl: ToastController
   ) {
       this.goToPom = PomPage;
+     
+      this.bong1=Bong1Page;
 
     this.kneww =KnewPage;
   }
