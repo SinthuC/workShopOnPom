@@ -28,7 +28,9 @@
 		<p ion-text [hidden]="supportQuestion.valid || submitted === false" color="danger" padding-left>
 			Support message is required
 		</p>
-
+		<div padding>
+			<button ion-button block [navPush]="go2Jorm">Go to Jorm Page</button>
+		</div>
 		<div padding>
 			<button ion-button block type="submit">Submit</button>
 		</div>
