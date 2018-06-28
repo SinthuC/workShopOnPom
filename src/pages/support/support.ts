@@ -6,6 +6,7 @@ import { AlertController, NavController, ToastController } from 'ionic-angular';
 import { PomPage } from '../pom/pom';
 
 
+
 @Component({
   selector: 'page-user',
   templateUrl: 'support.html'
@@ -23,7 +24,6 @@ export class SupportPage {
       this.goToPom = PomPage;
 
     this.kneww =KnewPage;
-
   }
   Pee(){
     this.navCtrl.push(PeePage);
