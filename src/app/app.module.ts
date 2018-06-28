@@ -33,6 +33,9 @@ import { KnewPage } from '../pages/knew/knew';
 import { JormPageModule } from '../pages/jorm/jorm.module';
 
 import { PeePage } from '../pages/pee/pee';
+import { Bong1PageModule } from '../pages/bong1/bong1.module';
+
+
 
 @NgModule({
   declarations: [
@@ -54,12 +57,14 @@ import { PeePage } from '../pages/pee/pee';
     PomPage,
     KnewPage,
     PeePage,
+    
 
   ],
   imports: [
     BrowserModule,
     HttpModule,
     JormPageModule,
+    Bong1PageModule,
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
@@ -99,6 +104,7 @@ import { PeePage } from '../pages/pee/pee';
     PomPage,
     KnewPage,
     PeePage,
+    
 
   ],
   providers: [
