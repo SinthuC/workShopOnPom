@@ -31,6 +31,7 @@ import { UserData } from '../providers/user-data';
 import { PomPage } from '../pages/pom/pom';
 import { KnewPage } from '../pages/knew/knew';
 
+import { PeePage } from '../pages/pee/pee';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,9 @@ import { KnewPage } from '../pages/knew/knew';
     TutorialPage,
     SupportPage,
     PomPage,
-    KnewPage
+    KnewPage,
+    PeePage,
+
   ],
   imports: [
     BrowserModule,
@@ -92,7 +95,9 @@ import { KnewPage } from '../pages/knew/knew';
     TutorialPage,
     SupportPage,
     PomPage,
-    KnewPage
+    KnewPage,
+    PeePage,
+
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },

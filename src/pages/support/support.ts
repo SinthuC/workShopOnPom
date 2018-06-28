@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import {KnewPage} from '../knew/knew';
+import { PeePage } from '../pee/pee';
 import { AlertController, NavController, ToastController } from 'ionic-angular';
 import { PomPage } from '../pom/pom';
 
@@ -24,7 +25,9 @@ export class SupportPage {
     this.kneww =KnewPage;
 
   }
-
+  Pee(){
+    this.navCtrl.push(PeePage);
+  }
   ionViewDidEnter() {
     let toast = this.toastCtrl.create({
       message: 'This does not actually send a support request.',
