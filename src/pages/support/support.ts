@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AlertController, NavController, ToastController } from 'ionic-angular';
+import { PomPage } from '../pom/pom';
 
 
 @Component({
@@ -12,13 +13,13 @@ export class SupportPage {
 
   submitted: boolean = false;
   supportMessage: string;
-
+  goToPom: any 
   constructor(
     public navCtrl: NavController,
     public alertCtrl: AlertController,
     public toastCtrl: ToastController
   ) {
-
+      this.goToPom = PomPage;
   }
 
   ionViewDidEnter() {

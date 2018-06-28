@@ -20,8 +20,10 @@
 			<ion-item>
 				<ion-label stacked color="primary">Enter your support message below</ion-label>
 				<ion-textarea [(ngModel)]="supportMessage" name="supportQuestion" #supportQuestion="ngModel" rows="6" required></ion-textarea>
-			</ion-item>
+			</ion-item>			
 		</ion-list>
+		<button ion-button [navPush]="goToPom">Pom</button>
+	
 
 		<p ion-text [hidden]="supportQuestion.valid || submitted === false" color="danger" padding-left>
 			Support message is required
